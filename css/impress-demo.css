@@ -229,10 +229,10 @@ body     { pointer-events: none; }
 #groups p.additionally {
 	font-size:24px;
 }
-/* tiny ideas */
+/* fundamentals */
 
 #grouprevenue {
-    width: 800px;
+    width: 700px;
     text-align: center;
 }
 
@@ -243,6 +243,48 @@ body     { pointer-events: none; }
 
 #fundamentals h1 {
 	font-size:48px;
+}
+
+/* fundamentals charts */
+.chartslide {
+			font-size:30px;
+}
+.chartslide img.chartimages {
+	width:100%;
+}
+#pechart {
+    width: 500px;
+		font-size:30px;
+}
+#pegchart {
+	width:500px;
+}
+.chartslide h1 {
+	font-size:48px;
+}
+
+table tr {
+	padding:10px;
+}
+table td {
+	padding:10px;
+}
+
+/* investment rationale */
+#investmentrationale {
+	
+}
+#investmentrationale h1 {
+	font-size:48px;
+	font-weight:bold;
+}
+p.charttitle {
+	width:600px;
+	text-align:center;
+	font-size:30px;
+}
+#rationalechart1 {
+	width:600px;
 }
 
 #ing b {

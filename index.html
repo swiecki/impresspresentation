@@ -291,17 +291,99 @@ I'll just leave this here.
 				</ul>
     </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+    <div id="pechart" class="step chartslide" data-x="4650" data-y="-850" data-z="-100" data-rotate="270" data-rotate-y="90" data-scale="6">
+				<h1>P/E Ratio</h1>
+				<img src="http://node_charts_production.s3.amazonaws.com/f8978b42752486661e0ea67a256eb6d1.png" alt="Intel Corporation PE Ratio Chart" /><p style="font-size: 10px;"><a href="http://ycharts.com/companies/INTC/pe_ratio">Intel Corporation PE Ratio Chart</a> by <a href="http://ycharts.com">YCharts</a></p>
     </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
+		<div id="pegchart" class="step chartslide" data-x="4650" data-y="-850" data-z="-2800" data-rotate="270" data-rotate-y="90" data-scale="6">
+				<h1>P/EG Ratio</h1>
+				<img src="http://node_charts_production.s3.amazonaws.com/ab756245c848491916e521265c230872.png" alt="Intel Corporation PEG Ratio Chart" /><p style="font-size: 10px;"><a href="http://ycharts.com/companies/INTC/peg_ratio">Intel Corporation PEG Ratio Chart</a> by <a href="http://ycharts.com">YCharts</a></p>
     </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
+		<div id="ebitdatable" class="step chartslide" data-x="5650" data-y="-5850" data-z="-2800" data-rotate="270" data-rotate-y="90" data-scale="6">
+				<h1>S&amp;P Recent Multiples</h1>
+				<table>
+				<th>&nbsp;</th>
+				<th>FY 2008</th>
+				<th>FY 2009</th>
+				<th>FY 2010</th>
+				<th>TTM</th>
+				<tr>
+					<td>EBITDA</td>
+					<td>12.31B</td>
+					<td>10.79B</td>
+					<td>20.7B</td>
+					<td>22.74B</td>
+				</tr>
+				<tr>
+					<td>Price/EBITDA</td>
+					<td>5.90</td>
+					<td>8.41</td>
+					<td>5.85</td>
+					<td>N/A</td>
+				</tr>
+				<tr>
+					<td>P/E Ratio</td>
+					<td>15.92</td>
+					<td>26.36</td>
+					<td>10.45</td>
+					<td>N/A</td>
+				</tr>
+				</table>
+    </div>
+
+		<div id="dcftable" class="step chartslide" data-x="5650" data-y="-5850" data-z="-5600" data-rotate="270" data-rotate-y="90" data-scale="6">
+				<h1>Trefis DCF Model</h1>
+				<table>
+				<th>Calendar Year</th>
+				<th>2011</th>
+				<th>2012</th>
+				<th>2013</th>
+				<th>2014</th>
+				<th>2015</th>
+				<tr>
+					<td>Revenue ($ Bil)</td>
+					<td>50.5</td>
+					<td>53.8</td>
+					<td>55.2</td>
+					<td>56.7</td>
+					<td>58.4</td>
+				</tr>
+				<tr>
+					<td>Adjusted EBITDA ($ Bil)</td>
+					<td>26.1</td>
+					<td>27.8</td>
+					<td>28.6</td>
+					<td>29.4</td>
+					<td>30.1</td>
+				</tr>
+				<tr>
+					<td>Indirect Expenses ($ Bil)</td>
+					<td>13.5</td>
+					<td>18.5</td>
+					<td>17.3</td>
+					<td>16.5</td>
+					<td>16.6</td>
+				</tr>
+				<tr>
+					<td>Discounted Cash Flows ($ Bil)</td>
+					<td></td>
+					<td>8.92</td>
+					<td>9.70</td>
+					<td>9.99</td>
+					<td>9.53</td>
+				</tr>
+				</table>
+				<p>Sum of DCFs = $151 B. Also taking into account $4.37B of debt, the Trefis valuation for Intel is $155B.With 5.09B shares outstanding, that is a price estimate of $30.52 per share.
+				<q>Inspect this more closely <a href="www.trefis.com/pl-popup/stock/INTC">here</a>.</q>
+    </div>
+
+    <div id="investmentrationale" class="step" data-x="8700" data-y="-2300" data-scale="6">
+        <h1>Investment Rationale</h1>
+				<p>INTC has really strong moats. In particular:</p>
+				<p class="charttitle">INTC R&amp;D Spending vs Competitors' Revenues</p>
+				<div id="rationalechart1"></div>
     </div>
 
     <!--
@@ -316,10 +398,6 @@ I'll just leave this here.
         as `data-rotate` (these two are basically aliases).
         
     -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
-    </div>
 
     <!--
         
@@ -409,14 +487,23 @@ if ("ontouchstart" in document.documentElement) {
     is used in event handlers.
     
 -->
-<script src="js/raphael.js"></script>
+				<script src="js/raphael.js"></script>
         <script src="js/g.raphael.js"></script>
         <script src="js/g.pie.js"></script>
+        <script src="js/g.bar.js"></script>
 <script>
     window.onload = function () {
         var r = Raphael("grouprevenuechart"),
-            pie = r.piechart(500, 140, 110, [35.4, 10.1, 5.0, 1.2, 3.6], { legend: ["PC Client Group", "Data Center Group","Other Intel architecture groups","Intel Atom", "McAffee Inc. and Intel Mobile Communications"], legendpos: "west"});
+            pie1 = r.piechart(500, 140, 110, [35.4, 10.1, 5.0, 1.2, 3.6], { legend: ["PC Client Group", "Data Center Group","Other Intel architecture groups","Intel Atom", "McAffee Inc. and Intel Mobile Communications"], legendpos: "west"});
+				var m = Raphael("rationalechart1");
+				// Creates a single series barchart at 10, 10
+				                // width 300, height 220, data: [10,20,30,40]
 
+				                m.barchart(40, 10, 600, 220, [[142,121,106,62, 35, 38]]);
+												axis = Raphael.g.axis(85,230,500,null,null,5,2,["INTC", "QCOM", "TSMC", "AMD", "NVDA", "UMC"], "|", 0, m);												
+												axis.text.attr({font:"12px Arial", "font-weight": "regular", "fill": "#333333"});
+												// show y-axis by setting orientation to 1 
+												axis2 = Raphael.g.axis(40,230,300,0,400,10,1);
     };
 </script>
 </body>
