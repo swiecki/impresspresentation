@@ -285,7 +285,23 @@ p.charttitle {
 }
 #rationalechart1 {
 	width:600px;
+	height:250px;
 }
+#investmentrationale p.small {
+	font-size:13px;
+}
+/* implications of INTC */
+#moatimplications ul {
+	font-size:30px;
+}
+
+#moatimplications h1 {
+	font-size:48px;
+	font-weight:bold;
+}
+
+
+
 
 #ing b {
     display: inline-block;
