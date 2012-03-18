@@ -183,6 +183,11 @@ body     { pointer-events: none; }
     transform:         translateY(0px);
 }
 
+h1.attention {
+	font-size:48px;
+	font-weight:bold;
+}
+
 /* impress.js title */
 
 #title {
@@ -274,10 +279,6 @@ table td {
 #investmentrationale {
 	
 }
-#investmentrationale h1 {
-	font-size:48px;
-	font-weight:bold;
-}
 p.charttitle {
 	width:600px;
 	text-align:center;
@@ -290,17 +291,17 @@ p.charttitle {
 #investmentrationale p.small {
 	font-size:13px;
 }
+#rndimplications {
+	font-size:30px;
+}
 /* implications of INTC */
-#moatimplications ul {
+#strongmarketshare ul {
 	font-size:30px;
 }
 
-#moatimplications h1 {
-	font-size:48px;
-	font-weight:bold;
+div .smalltext {
+	font-size:30px;
 }
-
-
 
 
 #ing b {
