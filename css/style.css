@@ -167,7 +167,7 @@ body     { pointer-events: none; }
     transition:         opacity 1s,         transform 0.5s 1s;
 }
 
-.impress-on-bored .hint {
+.impress-on-first .hint {
     opacity: 1;
     
     -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s;
